@@ -4,6 +4,7 @@ const bodyParser = require('body-parser')
 const app = express()
 const morgan = require('morgan')
 
+app.use(cors())
  // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
 
